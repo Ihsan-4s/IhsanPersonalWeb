@@ -36,7 +36,7 @@ const socials = [
 export default function Contact() {
     return (
         <div>
-            <h1 className="text-4xl">Contact</h1>
+            <h1 className="text-3xl md:text-4xl">Contact</h1>
             <p className="mt-4 text-zinc-400">
                 Got a question or want to <span className="text-white">work together</span>?
             </p>
@@ -50,7 +50,7 @@ export default function Contact() {
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.4 }}
-                        className="flex items-center justify-between gap-4 rounded-xl border border-white/[0.06] bg-white/[0.02] p-5"
+                        className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 rounded-xl border border-white/[0.06] bg-white/[0.02] p-5"
                     >
                         <div className="flex items-center gap-3 min-w-0">
                             <div className="w-9 h-9 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center shrink-0">
@@ -61,8 +61,8 @@ export default function Contact() {
                                 <p className="text-[11px] text-white/25 mt-0.5">Preferred method of contact</p>
                             </div>
                         </div>
-                        <div className="flex items-center gap-2 shrink-0">
-                            <a href={`mailto:Ihsanmaulana86821@gmail.com`} className="inline-flex items-center gap-1.5 px-3.5 py-2 text-[12px] font-medium rounded-lg border border-white/10 bg-white/[0.03] text-white/50 transition-all duration-200 hover:border-white/20 hover:text-white/70 hover:bg-white/[0.05]" >
+                        <div className="flex items-center gap-2 shrink-0 w-full sm:w-auto mt-2 sm:mt-0">
+                            <a href={`mailto:Ihsanmaulana86821@gmail.com`} className="w-full sm:w-auto justify-center inline-flex items-center gap-1.5 px-3.5 py-2 text-[12px] font-medium rounded-lg border border-white/10 bg-white/[0.03] text-white/50 transition-all duration-200 hover:border-white/20 hover:text-white/70 hover:bg-white/[0.05]" >
                                 <ArrowUpRight size={13} /> Send
                             </a>
                         </div>

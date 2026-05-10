@@ -13,8 +13,8 @@ const projectsData = [
         title: "Personal Portfolio",
         description: "A personal website built with React and Tailwind CSS to showcase my projects, skills, and journey as a developer.",
         tags: ["React", "Tailwind"],
-        liveUrl: "#",
-        githubUrl: "#",
+        liveUrl: "https://ihsan-personal-web.vercel.app/",
+        githubUrl: "https://github.com/Ihsan-4s/IhsanPersonalWeb",
         status: "Live",
         image: "/projects/personal.png",
     },
@@ -23,8 +23,8 @@ const projectsData = [
         title: "Cryptarithm Puzzle Solver",
         description: "A mobile application for solving cryptarithm puzzles with a user-friendly interface.",
         tags: ["HTML", "CSS", "JavaScript"],
-        liveUrl: null,
-        githubUrl: "#",
+        liveUrl: "https://ihsan-4s.github.io/cryptarithm/",
+        githubUrl: "https://github.com/Ihsan-4s/cryptarithm",
         status: "Completed",
         image: "/projects/cryptarithm.png",
     },
@@ -33,8 +33,8 @@ const projectsData = [
         title: "Dictionary App",
         description: "A clean dictionary application that fetches word definitions, phonetics, and examples from a public API.",
         tags: ["React", "API", "Tailwind"],
-        liveUrl: "#",
-        githubUrl: "#",
+        liveUrl: "https://dictionaruy.vercel.app/",
+        githubUrl: "https://github.com/Ihsan-4s/Dictionaruy",
         status: "Completed",
         image: "/projects/dictionaruy.png",
     },
@@ -43,8 +43,8 @@ const projectsData = [
         title: "Echolearn",
         description: "A website for learning live healthy lifestyle with a focus on visual feedback and interactive learning.",
         tags: ["JavaScript", "HTML", "CSS"],
-        liveUrl: null,
-        githubUrl: "#",
+        liveUrl: "https://lnkd.in/g2yg3zWR",
+        githubUrl: null,
         status: "Completed",
         image: "/projects/echolearn.png",
     },
@@ -54,7 +54,7 @@ const projectsData = [
         description: "A simple forum application with features like creating posts, commenting, and user authentication.",
         tags: ["PHP", "MySQL"],
         liveUrl: null,
-        githubUrl: "#",
+        githubUrl: "https://github.com/Ihsan-4s/Forum-Online",
         status: "Completed",
         image: "/projects/forum.png",
     },
@@ -100,7 +100,7 @@ export default function Projects() {
 
     return (
         <div>
-            <h1 className="text-4xl">Projects</h1>
+            <h1 className="text-3xl md:text-4xl">Projects</h1>
             <p className="mt-4 text-zinc-400">
                 A collection of things I've <span className="text-white">built</span> — from experiments to real-world applications.
             </p>
@@ -131,7 +131,7 @@ export default function Projects() {
             </div>
             <PageFooter text="More projects coming soon" />
             <div className="mt-16 mb-12 border-t border-white/[0.06]" />
-            <h2 className="text-3xl">Certificates</h2>
+            <h2 className="text-2xl md:text-3xl">Certificates</h2>
             <p className="mt-4 text-zinc-400">
                 Credentials and certifications I've <span className="text-white">earned</span> along the way.
             </p>

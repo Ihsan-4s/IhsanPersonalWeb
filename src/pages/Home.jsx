@@ -70,10 +70,10 @@ export default function Home() {
         <div>
             <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
                 <div className="flex items-center gap-2 mb-4">
-                    <motion.span initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4, delay: 0.2 }} className="text-2xl">👋</motion.span>
-                    <span className="text-[12px] uppercase tracking-[0.15em] text-white/25 font-medium">Welcome</span>
+                    <motion.span initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.4, delay: 0.2 }} className="text-xl md:text-2xl">👋</motion.span>
+                    <span className="text-[10px] md:text-[12px] uppercase tracking-[0.15em] text-white/25 font-medium">Welcome</span>
                 </div>
-                <h1 className="text-4xl font-semibold tracking-tight text-white">
+                <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-white">
                     Hi, I'm <span className="bg-gradient-to-r from-white to-white/60 bg-clip-text text-transparent">Ihsan</span>
                 </h1>
             </motion.div>
@@ -167,7 +167,7 @@ export default function Home() {
                     transition={{ duration: 0.4, delay: 0.5 }}
                     className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-6"
                 >
-                    <div className="flex items-start gap-4">
+                    <div className="flex flex-col sm:flex-row items-start gap-4">
                         <div className="w-10 h-10 rounded-lg bg-white/[0.04] border border-white/[0.06] flex items-center justify-center shrink-0">
                             <Sparkles size={18} className="text-white/35" />
                         </div>

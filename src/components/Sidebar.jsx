@@ -13,17 +13,17 @@ import profile from '../assets/profile.png'
 
 export default function Sidebar() {
     return (
-        <aside className="sticky top-6 h-[calc(100vh-48px)] w-72 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 text-white shadow-2xl">     
-            <div className="mb-8">
+        <aside className="static lg:sticky lg:top-6 lg:h-[calc(100vh-48px)] w-full lg:w-72 rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-5 text-white shadow-2xl z-20">     
+            <div className="mb-6 lg:mb-8 flex items-center lg:flex-col lg:items-start gap-4 lg:gap-0">
                 <img
                     src={profile}
                     alt="profile"
-                    className="mb-4 h-20 w-20 rounded-full object-cover"
+                    className="h-16 w-16 lg:mb-4 lg:h-20 lg:w-20 rounded-full object-cover shrink-0"
                 />
-                <h1 className="text-2xl font-semibold">Ihsan Maulana Rizky</h1>
+                <h1 className="text-xl lg:text-2xl font-semibold">Ihsan Maulana Rizky</h1>
             </div>
             {/* Menu */}
-            <nav className="space-y-2">
+            <nav className="flex lg:flex-col gap-2 overflow-x-auto lg:overflow-visible pb-2 lg:pb-0 scrollbar-hide">
                 <SidebarItem 
                 to="/" 
                 icon={<Home size={18} />} 
@@ -60,7 +60,7 @@ function SidebarItem({ to, icon, label }) {
         <NavLink
             to={to}
             className={({ isActive }) =>
-                `flex w-full items-center gap-3 rounded-xl px-4 py-3 text-sm transition ${
+                `flex flex-1 lg:flex-none whitespace-nowrap lg:w-full items-center justify-center lg:justify-start gap-3 rounded-xl px-4 py-3 text-sm transition ${
                     isActive
                         ? "bg-zinc-800 text-white"
                         : "text-zinc-400 hover:bg-white/10 hover:text-white"
@@ -68,7 +68,7 @@ function SidebarItem({ to, icon, label }) {
             }
         >
             {icon}
-            {label}
+            <span className="hidden sm:inline-block lg:inline-block">{label}</span>
         </NavLink>
     );
 }

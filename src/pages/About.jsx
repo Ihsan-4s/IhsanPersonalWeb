@@ -37,7 +37,7 @@ export default function About() {
     ];
     return (
         <div>
-            <h1 className="text-4xl">About Me</h1>
+            <h1 className="text-3xl md:text-4xl">About Me</h1>
             <p className="mt-4 text-zinc-400">
                 A deeper look into who <span className="text-white">I am</span> — shaped through passion, curiosity, and creativity.
             </p>
@@ -45,7 +45,7 @@ export default function About() {
                 More than just <span className="underline">code and design</span> — a reflection of my journey, mindset, and vision.
             </p>
             <div className=" bg-[#121212] text-gray-300">
-                <div className="max-w-4xl mx-auto border border-gray-800 rounded-sm overflow-hidden flex bg-[#2a2a2a] mt-8">
+                <div className="max-w-4xl mx-auto border border-gray-800 rounded-sm overflow-hidden flex flex-col sm:flex-row bg-[#2a2a2a] mt-8">
 
                     {tabs.map((tab) => {
                         const TabIcon = tab.icon;
@@ -65,7 +65,7 @@ export default function About() {
                         );
                     })}
                 </div>
-                <div className="p-8 leading-relaxed space-y-6 text-[17px]">
+                <div className="p-4 sm:p-8 leading-relaxed space-y-6 text-[15px] sm:text-[17px]">
                     <AnimatePresence mode="wait">
                         {activeTab === 'overview' && (
                             <motion.div
@@ -119,15 +119,15 @@ export default function About() {
                                     <SectionHeader label="Curriculum Vitae" />
                                 </div>
 
-                                <div className="flex items-center gap-3 mb-6">
-                                    <a className="inline-flex items-center gap-2 border rounded-lg border-white/10 bg-white/[0.03] px-5 py-2.5 text-[13px] font-medium text-white/60 transition-all duration-200 hover:border-white/25 hover:text-white/80 hover:bg-white/[0.06]"
+                                <div className="flex flex-col sm:flex-row items-center gap-3 mb-6">
+                                    <a className="w-full sm:w-auto justify-center inline-flex items-center gap-2 border rounded-lg border-white/10 bg-white/[0.03] px-5 py-2.5 text-[13px] font-medium text-white/60 transition-all duration-200 hover:border-white/25 hover:text-white/80 hover:bg-white/[0.06]"
                                         href={cv}
                                         download="CV - Ihsan.pdf"
                                     >
                                         <Download size={14} />
                                         Download CV
                                     </a>
-                                    <a className="inline-flex items-center gap-2 border rounded-lg border-white/10 bg-white/[0.03] px-5 py-2.5 text-[13px] font-medium text-white/60 transition-all duration-200 hover:border-white/25 hover:text-white/80 hover:bg-white/[0.06]"
+                                    <a className="w-full sm:w-auto justify-center inline-flex items-center gap-2 border rounded-lg border-white/10 bg-white/[0.03] px-5 py-2.5 text-[13px] font-medium text-white/60 transition-all duration-200 hover:border-white/25 hover:text-white/80 hover:bg-white/[0.06]"
                                         href="https://drive.google.com/file/d/1rk3QKbloWZ_IBpfH6i-tOj-5WoIYfC7-/view"
                                         target="_blank"
                                         rel="noopener noreferrer"
@@ -137,7 +137,7 @@ export default function About() {
                                     </a>
                                 </div>
 
-                                <div className="w-full h-[600px] rounded-lg border border-white/[0.06] overflow-hidden">
+                                <div className="w-full h-[400px] sm:h-[600px] rounded-lg border border-white/[0.06] overflow-hidden">
                                     <iframe
                                         src="https://drive.google.com/file/d/1rk3QKbloWZ_IBpfH6i-tOj-5WoIYfC7-/preview"
                                         width="100%"
@@ -177,7 +177,7 @@ export default function About() {
                                                 className="relative rounded-xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm overflow-hidden"
                                             >
                                                 <div className="p-6">
-                                                    <div className="flex items-start justify-between gap-4 mb-4">
+                                                    <div className="flex flex-col sm:flex-row items-start sm:justify-between gap-4 mb-4">
                                                         <div className="flex-1 min-w-0">
                                                             <div className="flex items-center gap-2 mb-1">
                                                                 <GraduationCap size={16} className="text-white/40 shrink-0" />
