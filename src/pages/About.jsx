@@ -8,7 +8,7 @@ import cv from "../assets/cv.pdf"
 const educationData = [
     {
         id: 1,
-        degree: "SMK Wikrama — Computer Science",
+        degree: "Computer Science",
         institution: "SMK Wikrama Bogor",
         location: "Bogor, Indonesia",
         period: "2024 — 2027",
