@@ -67,7 +67,7 @@ export default function Sidebar() {
                             <nav className="flex flex-col gap-1 pb-1">
                                 <SidebarItem to="/" icon={<Home size={18} />} label="Home" onClick={() => setMobileMenuOpen(false)} />
                                 <SidebarItem to="/about" icon={<User size={18} />} label="About" onClick={() => setMobileMenuOpen(false)} />
-                                <SidebarItem to="/projects" icon={<FolderKanban size={18} />} label="Projects" onClick={() => setMobileMenuOpen(false)} />
+                                <SidebarItem to="/projects" icon={<FolderKanban size={18} />} label="Projects & Certificates" onClick={() => setMobileMenuOpen(false)} />
                                 <SidebarItem to="/contact" icon={<Mail size={18} />} label="Contact" onClick={() => setMobileMenuOpen(false)} />
                             </nav>
                         </div>
@@ -97,7 +97,7 @@ export default function Sidebar() {
                 <nav className="flex flex-col gap-2">
                     <SidebarItem to="/" icon={<Home size={18} />} label="Home" />
                     <SidebarItem to="/about" icon={<User size={18} />} label="About" />
-                    <SidebarItem to="/projects" icon={<FolderKanban size={18} />} label="Projects" />
+                    <SidebarItem to="/projects" icon={<FolderKanban size={18} />} label="Projects & Certificates" />
                     <SidebarItem to="/contact" icon={<Mail size={18} />} label="Contact" />
                 </nav>
             </aside>
