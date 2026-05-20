@@ -62,8 +62,14 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="flex items-center gap-2 shrink-0 w-full sm:w-auto mt-2 sm:mt-0">
-                            <a href={`mailto:Ihsanmaulana86821@gmail.com`} className="w-full sm:w-auto justify-center inline-flex items-center gap-1.5 px-3.5 py-2 text-[12px] font-medium rounded-lg border border-white/10 bg-white/[0.03] text-white/50 transition-all duration-200 hover:border-white/20 hover:text-white/70 hover:bg-white/[0.05]" >
-                                <ArrowUpRight size={13} /> Send
+                            <a
+                                href="https://mail.google.com/mail/?view=cm&fs=1&to=ihsanmaulana86821@gmail.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full sm:w-auto justify-center inline-flex items-center gap-1.5 px-3.5 py-2 text-[12px] font-medium rounded-lg border border-white/10 bg-white/[0.03] text-white/50 transition-all duration-200 hover:border-white/20 hover:text-white/70 hover:bg-white/[0.05]"
+                            >
+                                <ArrowUpRight size={13} />
+                                Send
                             </a>
                         </div>
                     </motion.div>
